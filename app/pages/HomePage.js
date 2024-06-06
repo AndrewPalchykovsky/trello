@@ -3,9 +3,18 @@ import Card from "@components/Card"
 import React from "react";
 
 export default function HomePage() {
+    const cards = [
+        {title: 'Card title', description: 'Card Description'},
+    ]
+
+    const cardList = cards.map((card, index) => (
+        <Card title={card.title} description={card.description} />
+    ));
     return (
         <section className={styles.homepage}>
-            <Card/>
+            <p>qwe</p>
+            {cardList}
+
         </section>
     )
 }
